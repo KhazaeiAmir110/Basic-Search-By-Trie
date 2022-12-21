@@ -45,9 +45,9 @@ my_list.pack(pady=40)
 
 trie = Trie_2.Trie()
 list_insert = ["appData", "appData", "application Data", "bash_history", "contacts", "cookies",
-               "Creative Cloud Files", "docker", "desktop", "documents", "downloads", "favorites", "gitconfig",
-               "idlerc", "ipython", "idlerc", "jupyter", "java", "lesshst", "Links", "Local Settings",
-               "NetHood", "matplotlib", "Music", "recent", "templates"]
+               "creative Cloud Files", "docker", "desktop", "documents", "downloads", "favorites", "gitconfig",
+               "idlerc", "ipython", "idlerc", "jupyter", "java", "lesshst", "links", "local Settings",
+               "netHood", "matplotlib", "music", "recent", "templates"]
 for string in list_insert:
     trie.insert(string)
 toppings = trie.search("")

@@ -38,4 +38,4 @@ class Trie(object):
             else:
                 return []
         self.dfs(node, x[:-1])
-        return sorted(self.output, reverse=True)
+        #return sorted(self.output, key=lambda x: x[1], reverse=True)
