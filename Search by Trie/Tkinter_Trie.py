@@ -44,11 +44,13 @@ my_list = Listbox(root, width=50)
 my_list.pack(pady=40)
 
 trie = Trie_2.Trie()
-list_insert = ["appData", "appData", "application Data", "bash_history", "contacts", "cookies",
-               "creative Cloud Files", "docker", "desktop", "documents", "downloads", "favorites", "gitconfig",
-               "idlerc", "ipython", "idlerc", "jupyter", "java", "lesshst", "links", "local Settings",
-               "netHood", "matplotlib", "music", "recent", "templates"]
-for string in list_insert:
+
+txt_file = open("text.txt", "r")
+file_content = txt_file.read()
+content_list = file_content.split(",")
+txt_file.close()
+
+for string in content_list:
     trie.insert(string)
 toppings = trie.search("")
 update(toppings)
@@ -57,3 +59,5 @@ my_list.bind("<<ListboxSelect>>", fillout)
 my_entry.bind("<KeyRelease>", check)
 
 root.mainloop()
+
+#################################################################################
