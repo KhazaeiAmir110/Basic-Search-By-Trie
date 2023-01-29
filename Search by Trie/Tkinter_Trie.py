@@ -44,7 +44,6 @@ my_list = Listbox(root, width=50)
 my_list.pack(pady=40)
 
 trie = Trie_2.Trie()
-
 txt_file = open("text.txt", "r")
 file_content = txt_file.read()
 content_list = file_content.split(",")
